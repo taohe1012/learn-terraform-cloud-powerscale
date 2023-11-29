@@ -1,8 +1,7 @@
-output "instance_ami" {
-  value = aws_instance.ubuntu.ami
+output "users" {
+  value = powerscale_user.testUser.name
 }
 
-output "instance_arn" {
-  value = aws_instance.ubuntu.arn
+output "userGroups" {
+  value = powerscale_user_group.testUserGroup.name
 }
-

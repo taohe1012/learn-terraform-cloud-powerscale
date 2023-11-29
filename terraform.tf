@@ -1,19 +1,19 @@
 terraform {
-
+/*
   cloud {
-    organization = "organization-name"
+    organization = "Terraform_Cloud_TTHE"
 
     workspaces {
-      name = "learn-terraform-cloud"
+      name = "learn-terraform-cloud-powerscale"
     }
   }
-
+*/
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.28.0"
+    powerscale = {
+      source = "registry.terraform.io/dell/powerscale"
+      version = "1.0.0"
     }
   }
 
-  required_version = ">= 0.14.0"
+  required_version = ">= 1.1.0"
 }

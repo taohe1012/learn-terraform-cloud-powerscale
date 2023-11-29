@@ -1,20 +1,25 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
-provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.28.0"
-  constraints = "~> 3.28.0"
+provider "registry.terraform.io/dell/powerscale" {
+  version     = "1.0.0"
+  constraints = "1.0.0"
   hashes = [
-    "h1:0cCqlVoOAj4YOi61kVpqoxu1bdAmB67z6uZf+lsHJOw=",
-    "zh:1fee7fce319be5bea7df2e95f28a78a04e15c18bad5eb56dcc0ecc324c97f4b8",
-    "zh:2383ff31ef7411f7d4bef1ee288f0f79bec41cf220ac94c2b31f6a702b26f984",
-    "zh:2f450372a8aa7d32f62524159a5930e0251ba34f491d66f00239452a6d575921",
-    "zh:379d4fdc16a2245b50959f5bfcb24c71fb74b292b6cf9c2d267b6ce94dddd208",
-    "zh:9fd1078759edd79548ec52c6853668a69f22803c92c0ac202f5c43c1ace63ac0",
-    "zh:aef544e720ce79f97875cc4ef5dd163922e9f47a496e663d0a272e881d2dd32e",
-    "zh:e2f28ba5bde0403f3273e80860a80ab5e63420e0142c0e8e283b651b750a8ffe",
-    "zh:ebc859186fcdd4700cc7091a8ecf4e06cc6d2eceadaeadda0d0e49efc6456325",
-    "zh:ee7bced0660945206c6226de35ae465b52e406b12e9ff1075186af37962caa6f",
-    "zh:f33063481894f951ff1e76b94a8311041a4bd3f1f1f01d1a8580d6c893e13c2c",
+    "h1:sq74rzrEDZCjNQKh7Yba0P96Qsg2lpCyk+8zr31phM4=",
+    "zh:0fddf81e21d98725944b71b976236d05b26c22e1481c1dfe0fa753955bb63e25",
+    "zh:24a87f038f000c6729aa8de02db5fd90a5ff797a55cda167fc0bd8109478c4a7",
+    "zh:4033b3d0334c735b8949d9dea853cbc598dc4bc792abc1f3f94f61fe3daf7d12",
+    "zh:70dfe23b81b6154c22ac643b7ba22fa18ae2597df37fd2bf3d6a1815120ada97",
+    "zh:7b57f28ce78149fa6e0f979d25f89fbf8de859a17c84a7359385f204e59c6a1c",
+    "zh:88acb560604a5032881edff633fb52cb4f3211651ec632e0f57f6105d6332f3c",
+    "zh:890df766e9b839623b1f0437355032a3c006226a6c200cd911e15ee1a9014e9f",
+    "zh:a8177b52f732ef85afa350c91801d64dbf3bda96e55a220e202f6aeffb536930",
+    "zh:ae438b13816799cf8c7fdab585bf51bcf883f9fc79c7a1182f4f6fe49817dfa8",
+    "zh:b8f2c2f090227a859283e2b0925743e42714ccaac7b56b33ea98413a65b9da09",
+    "zh:dd8b63b7db60909d5f181b52b4e6a6a77d09623372cbaed47e68e8046b68531e",
+    "zh:e75bd28090a7f764621e5253bdc3ac9c1456fa05d2b14d36506850b9787533d7",
+    "zh:f0488e20c37405cc826469574922c0333a750ab55c71b0c0cbb0ed54826da55a",
+    "zh:f3ab659d160d0584c7251ca6a965dd03ff2bba279e183440541a15a5cf858ed5",
+    "zh:f99e47688804cb6908fee3a8e6e16dfb4e1fe0c1fc385603039875078d71e86a",
   ]
 }

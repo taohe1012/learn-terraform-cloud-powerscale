@@ -1,28 +1,43 @@
-provider "aws" {
-  region = var.region
+provider "powerscale" {
+  username = "root"
+  password = "Password123!"
+  endpoint = "https://10.225.108.6:8080"
+  insecure = true
 }
 
-data "aws_ami" "ubuntu" {
-  most_recent = true
+resource "powerscale_user" "testUser" {
+  # Required name for creating
+  name = "testUserCloud"
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
+  # Optional query_force. If true, skip validation checks when creating user. The force option is required for user ID changes.
+  # query_force = false
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
+  # Optional query_zone, will return user according to zone. Specifies the zone that the user will belong to when creating. Once user is created, its zone cannot be changed.
+  # query_zone = "testZone"
 
-  owners = ["099720109477"] # Canonical
+  # Optional query_provider, will return user according to provider. Specifies the provider that the user will belong to when creating. Once user is created, its provider cannot be changed.
+  # query_provider = "testProvider"
+
+  # Optional parameters when creating
+  # sid = "SID:XXXX"
+
+  # Optional parameters when creating and updating. 
+  # uid      = 11000
+  # password = "testPassword"
+  roles    = ["SystemAdmin"]
+  # enabled = false
+  # unlock = false
+  # email = "testTerraform@dell.com"
+  # home_directory = "/ifs/home/testUserResourceSample"
+  # password_expires = true
+  # primary_group = "testPrimaryGroup"
+  # prompt_password_change = false
+  # shell = "/bin/zsh"
+  # expiry = 123456
+  # gecos = "testFullName"
 }
 
-resource "aws_instance" "ubuntu" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = var.instance_type
-
-  tags = {
-    Name = var.instance_name
-  }
+resource "powerscale_user_group" "testUserGroup" {
+  # Required name for creating
+  name = "testUserGroupCloud"
 }
