@@ -5,3 +5,7 @@ output "users" {
 output "userGroups" {
   value = powerscale_user_group.testUserGroup.name
 }
+
+output "powermaxVolume" {
+  value = powermax_volume.testVolume.vol_name
+}

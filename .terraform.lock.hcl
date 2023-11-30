@@ -1,6 +1,29 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
+provider "registry.terraform.io/dell/powermax" {
+  version     = "1.0.0"
+  constraints = "1.0.0"
+  hashes = [
+    "h1:mMex+IGBYkMv7moIV9VmZuaNT8Qj0A0T7ROduY/78sY=",
+    "zh:1a0b7a8729c690dea3f2d974537e6874b98c8634d19f76ddb6676e6f1cfea522",
+    "zh:38474e88b587559b651aac25f0367daef21a61f7445c36f8909c571ed411f54b",
+    "zh:487e71d081657dd1abad0f28e19c729894c2684bfbd3492588ba8ffd3fcfed97",
+    "zh:4d9e4ada332a3e62ab5ff75420e9997c6f31a0ad3c5d6c6f35b88803494aa1a1",
+    "zh:531aa608987827c86d6e29373270963a3752e042dc19492072542fa2469ddf5e",
+    "zh:6efc54f3e1ec3e89470ac6a68a86ea50ffbb7f782428ba1334803bc9c1cbcb74",
+    "zh:890df766e9b839623b1f0437355032a3c006226a6c200cd911e15ee1a9014e9f",
+    "zh:a8bdc0b5e5ef6c91bedbba1f028a3a3600db0dc9fbee25f7005c71f525753dcb",
+    "zh:c0179409fe095de71549561d822de296fe175b7455d3fbe142f8963f0d127c8f",
+    "zh:c8b96d7df387ca82ce3119d23e2126c0f6168812b9d236afb0d210c649bfdcc5",
+    "zh:d09ac95170c20308fdec4f2c65706c178ea76eb9198d36beca3f3029e8796fa3",
+    "zh:e05c94c3ffd9f924f5165920c0890521954ffc2b31139c1a4ea2a76f97902b16",
+    "zh:e4ce3fbb8a6728e9dcb03598d041f20b25520ba5680f2b36e74d2a6cc03a2036",
+    "zh:e671ed92389df36434c95f5978ff8bb8ce0840967f535defa8689b41e37814e5",
+    "zh:f930ef142ad560ca20c41af03f3a2f317835220f45dbbb8d1d0c0d6a4dfc237a",
+  ]
+}
+
 provider "registry.terraform.io/dell/powerscale" {
   version     = "1.0.0"
   constraints = "1.0.0"

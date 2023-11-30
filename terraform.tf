@@ -13,6 +13,10 @@ terraform {
       source = "registry.terraform.io/dell/powerscale"
       version = "1.0.0"
     }
+    powermax = {
+      source = "registry.terraform.io/dell/powermax"
+      version = "1.0.0"
+    }
   }
 
   required_version = ">= 1.1.0"
